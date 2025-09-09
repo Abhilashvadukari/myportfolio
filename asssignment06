@@ -4,12 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Library Management System</title>
-    <link rel="stylesheet" href="style.css" />
+    
+    <!-- CSS inside HTML -->
+    <style>
+        /* Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Body */
+        body {
+          background: #f4f6f9;
+          color: #333;
+          line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+          background: #2c3e50;
+          color: white;
+          text-align: center;
+          padding: 25px 0;
+          border-bottom: 4px solid #3498db;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        /* Container */
+        .container {
+          max-width: 1000px;
+          margin: 30px auto;
+          background: white;
+          padding: 25px;
+          border-radius: 10px;
+          box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Heading */
+        h2 {
+          margin: 20px 0;
+          color: #2c3e50;
+          border-left: 5px solid #3498db;
+          padding-left: 10px;
+        }
+
+        /* Table */
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 25px;
+        }
+
+        thead {
+          background: #3498db;
+          color: white;
+        }
+
+        thead th {
+          padding: 12px;
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        tbody tr {
+          border-bottom: 1px solid #ddd;
+        }
+
+        tbody td {
+          padding: 10px;
+        }
+
+        tbody tr:nth-child(even) {
+          background: #f2f8ff;
+        }
+
+        /* Form */
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-top: 10px;
+        }
+
+        form input {
+          flex: 1 1 calc(25% - 10px);
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          transition: border 0.3s;
+        }
+
+        form input:focus {
+          border-color: #3498db;
+          outline: none;
+        }
+
+        /* Button */
+        button {
+          flex: 1 1 100%;
+          padding: 12px;
+          background: #3498db;
+          border: none;
+          border-radius: 8px;
+          color: white;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        button:hover {
+          background: #217dbb;
+        }
+
+        /* Footer */
+        footer {
+          text-align: center;
+          margin-top: 20px;
+          padding: 15px;
+          background: #2c3e50;
+          color: white;
+          border-top: 4px solid #3498db;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Library Management System</h1>
+        <h1>📚 Library Management System</h1>
     </header>
 
     <div class="container">
@@ -53,6 +179,10 @@
             <button type="submit">Add Book</button>
         </form>
     </div>
+
+    <footer>
+        <p>© 2025 Library Management System | Designed with ❤️</p>
+    </footer>
 
     <script>
         const bookForm = document.getElementById('bookForm');
